@@ -41,7 +41,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //MARK: - Setupviews
+        setupView()
+        configureProgressView()
+        activateTimer()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let segmentSize = colors.count
+        collectionView.scrollToItem(at: IndexPath(item: segmentSize, section: 0),
+                                  at: .centeredHorizontally,
+                                  animated: false)
+    }
+    
+    private func setupView() {
         view.addSubview(collectionView)
         view.addSubview(progressView)
         
@@ -60,22 +74,10 @@ class ViewController: UIViewController {
             progressView.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor, constant:  -20),
             progressView.widthAnchor.constraint(equalToConstant: view.frame.width * 0.8)
         ])
-        
-        configureProgressView()
-        activateTimer()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        let segmentSize = colors.count
-        collectionView.scrollToItem(at: IndexPath(item: segmentSize, section: 0),
-                                  at: .centeredHorizontally,
-                                  animated: false)
     }
     
     private func configureProgressView() {
-        progressView.progress = 0.0
+        progressView.progress = 0.1
         progress = Progress(totalUnitCount: Int64(colors.count))
         progress?.completedUnitCount = 1
         progressView.setProgress(Float(progress!.fractionCompleted), animated: false)
@@ -90,7 +92,7 @@ class ViewController: UIViewController {
     }
     
     private func activateTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 2,
+        timer = Timer.scheduledTimer(timeInterval: 3,
                                      target: self,
                                      selector: #selector(timerCallBack),
                                      userInfo: nil,
@@ -139,8 +141,8 @@ extension ViewController: UICollectionViewDelegate {
         var item = visibleCellIndexPath().item
         if item == colors.count * 3 - 2 {
             item = colors.count * 2
-        } else if item == 1 {
-            item = colors.count + 1
+        } else if item == 2 {
+            item = colors.count + 2
         }
         
         collectionView.scrollToItem(at: IndexPath(item: item, section: 0),
