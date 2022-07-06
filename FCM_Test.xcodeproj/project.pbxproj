@@ -10,9 +10,12 @@
 		7512EBCB2875C21C0073254F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512EBCA2875C21C0073254F /* AppDelegate.swift */; };
 		7512EBCD2875C21C0073254F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512EBCC2875C21C0073254F /* SceneDelegate.swift */; };
 		7512EBCF2875C21C0073254F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512EBCE2875C21C0073254F /* ViewController.swift */; };
-		7512EBD22875C21C0073254F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7512EBD02875C21C0073254F /* Main.storyboard */; };
 		7512EBD42875C21D0073254F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7512EBD32875C21D0073254F /* Assets.xcassets */; };
 		7512EBD72875C21D0073254F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7512EBD52875C21D0073254F /* LaunchScreen.storyboard */; };
+		7512EBE02875C97D0073254F /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7512EBDF2875C97D0073254F /* FirebaseInAppMessaging-Beta */; };
+		7512EBE22875C97D0073254F /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7512EBE12875C97D0073254F /* FirebaseInAppMessagingSwift-Beta */; };
+		7512EBE42875C97D0073254F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 7512EBE32875C97D0073254F /* FirebaseMessaging */; };
+		7512EBE62875CAE00073254F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7512EBE52875CAE00073254F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,11 @@
 		7512EBCA2875C21C0073254F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7512EBCC2875C21C0073254F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7512EBCE2875C21C0073254F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7512EBD12875C21C0073254F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7512EBD32875C21D0073254F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7512EBD62875C21D0073254F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7512EBD82875C21D0073254F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7512EBE52875CAE00073254F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7512EBE72875D71B0073254F /* FCM_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCM_Test.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7512EBE42875C97D0073254F /* FirebaseMessaging in Frameworks */,
+				7512EBE22875C97D0073254F /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				7512EBE02875C97D0073254F /* FirebaseInAppMessaging-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,13 +63,14 @@
 		7512EBC92875C21C0073254F /* FCM_Test */ = {
 			isa = PBXGroup;
 			children = (
+				7512EBE72875D71B0073254F /* FCM_Test.entitlements */,
 				7512EBCA2875C21C0073254F /* AppDelegate.swift */,
 				7512EBCC2875C21C0073254F /* SceneDelegate.swift */,
 				7512EBCE2875C21C0073254F /* ViewController.swift */,
-				7512EBD02875C21C0073254F /* Main.storyboard */,
 				7512EBD32875C21D0073254F /* Assets.xcassets */,
 				7512EBD52875C21D0073254F /* LaunchScreen.storyboard */,
 				7512EBD82875C21D0073254F /* Info.plist */,
+				7512EBE52875CAE00073254F /* GoogleService-Info.plist */,
 			);
 			path = FCM_Test;
 			sourceTree = "<group>";
@@ -83,6 +91,11 @@
 			dependencies = (
 			);
 			name = FCM_Test;
+			packageProductDependencies = (
+				7512EBDF2875C97D0073254F /* FirebaseInAppMessaging-Beta */,
+				7512EBE12875C97D0073254F /* FirebaseInAppMessagingSwift-Beta */,
+				7512EBE32875C97D0073254F /* FirebaseMessaging */,
+			);
 			productName = FCM_Test;
 			productReference = 7512EBC72875C21C0073254F /* FCM_Test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 7512EBBE2875C21C0073254F;
+			packageReferences = (
+				7512EBDE2875C97C0073254F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7512EBC82875C21C0073254F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +143,7 @@
 			files = (
 				7512EBD72875C21D0073254F /* LaunchScreen.storyboard in Resources */,
 				7512EBD42875C21D0073254F /* Assets.xcassets in Resources */,
-				7512EBD22875C21C0073254F /* Main.storyboard in Resources */,
+				7512EBE62875CAE00073254F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7512EBD02875C21C0073254F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7512EBD12875C21C0073254F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7512EBD52875C21D0073254F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -217,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FCM_Test/FCM_Test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83R5US8PK8;
@@ -294,7 +303,6 @@
 				INFOPLIST_FILE = FCM_Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FCM_Test/FCM_Test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83R5US8PK8;
@@ -322,7 +331,6 @@
 				INFOPLIST_FILE = FCM_Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +368,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7512EBDE2875C97C0073254F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7512EBDF2875C97D0073254F /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7512EBDE2875C97C0073254F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		7512EBE12875C97D0073254F /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7512EBDE2875C97C0073254F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		7512EBE32875C97D0073254F /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7512EBDE2875C97C0073254F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7512EBBF2875C21C0073254F /* Project object */;
 }
