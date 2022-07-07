@@ -13,6 +13,7 @@
 		7553C4542877062000999702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7553C4522877062000999702 /* Main.storyboard */; };
 		7553C4562877062100999702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7553C4552877062100999702 /* Assets.xcassets */; };
 		7553C4592877062100999702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7553C4572877062100999702 /* LaunchScreen.storyboard */; };
+		7553C46128770BC300999702 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553C46028770BC300999702 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7553C4552877062100999702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7553C4582877062100999702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7553C45A2877062100999702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7553C46028770BC300999702 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7553C44C2877062000999702 /* AppDelegate.swift */,
 				7553C44E2877062000999702 /* SceneDelegate.swift */,
 				7553C4502877062000999702 /* ViewController.swift */,
+				7553C46028770BC300999702 /* Reachability.swift */,
 				7553C4522877062000999702 /* Main.storyboard */,
 				7553C4552877062100999702 /* Assets.xcassets */,
 				7553C4572877062100999702 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				7553C4512877062000999702 /* ViewController.swift in Sources */,
 				7553C44D2877062000999702 /* AppDelegate.swift in Sources */,
+				7553C46128770BC300999702 /* Reachability.swift in Sources */,
 				7553C44F2877062000999702 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
