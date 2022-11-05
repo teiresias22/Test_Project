@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>942561923742-b2c6uv9ti18hqjmu3lvdum51d0upbii0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.942561923742-b2c6uv9ti18hqjmu3lvdum51d0upbii0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBkzABZpBAU0aCkqI6Ec5ektVjPx7C1KpA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>942561923742</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kr.co.markcloud.firebasetest</string>
+	<key>PROJECT_ID</key>
+	<string>fir-test-15ea1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-test-15ea1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:942561923742:ios:c3a904659ca6d96beae18f</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-test-15ea1-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

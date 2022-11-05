@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test Modal View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TestModalViewController" id="Y6W-OH-hqX" customClass="TestModalViewController" customModule="firebasetest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSN-Xq-nqm">
+                                <rect key="frame" x="0.0" y="75" width="390" height="735"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aaaaaa" translatesAutoresizingMaskIntoConstraints="NO" id="22q-wF-xGf">
+                                <rect key="frame" x="120" y="0.0" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="d3E-vc-PTa"/>
+                                    <constraint firstAttribute="width" constant="150" id="oZ9-2d-pi8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="22q-wF-xGf" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="HqN-B0-ixb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eSN-Xq-nqm" secondAttribute="trailing" id="QT1-gJ-Xzo"/>
+                            <constraint firstItem="22q-wF-xGf" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="YWb-dM-x2e"/>
+                            <constraint firstItem="eSN-Xq-nqm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="kVe-wW-Vbq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="eSN-Xq-nqm" secondAttribute="bottom" id="nIr-fY-g1J"/>
+                            <constraint firstItem="eSN-Xq-nqm" firstAttribute="top" secondItem="22q-wF-xGf" secondAttribute="bottom" constant="-75" id="oso-mM-cBn"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="390" height="844"/>
+                    <connections>
+                        <outlet property="profile" destination="22q-wF-xGf" id="tNj-qg-dLj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aaaaaa" width="320" height="213"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
